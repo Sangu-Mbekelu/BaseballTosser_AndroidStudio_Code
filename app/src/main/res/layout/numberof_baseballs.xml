@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app_background"
+    tools:context=".NumberofBaseballs">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:gravity="center"
+        android:text="@string/NumberofBalls"
+        android:textColor="@color/white"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:typeface="sans"
+        android:id="@+id/title"/>
+
+    <EditText
+        android:id="@+id/Number_of_Baseballs"
+        android:layout_width="700dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="40dp"
+        android:backgroundTint="@color/white"
+        android:hint="@string/EnterNumber"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="25sp" />
+
+    <ImageView
+        android:contentDescription="@string/PawImage"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/app_spirit_paw"/>
+
+    <Button
+        android:id="@+id/Enter"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:backgroundTint="#F76902"
+        android:textSize="20sp"
+        android:text="@string/Enter"
+        android:layout_below="@id/Number_of_Baseballs"
+        android:layout_marginTop="80dp"
+        android:layout_centerHorizontal="true"
+        />
+
+</RelativeLayout>

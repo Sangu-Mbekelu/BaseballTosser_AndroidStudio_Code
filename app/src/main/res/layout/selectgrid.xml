@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app_background"
+    tools:context=".selectgrid">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:gravity="center"
+        android:text="@string/ZoneSelect"
+        android:textColor="@color/white"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:typeface="sans"
+        android:id="@+id/title"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:src="@drawable/random_graphic"
+        android:layout_below="@id/title"
+        android:layout_centerHorizontal="true"/>
+
+
+    <LinearLayout
+        android:id="@+id/NumRow1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/Number_1"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:backgroundTint="#F76902"
+            android:textSize="20sp"
+            android:text="@string/Number1" />
+
+        <Button
+            android:id="@+id/Number_2"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:backgroundTint="#F76902"
+            android:layout_marginStart="30dp"
+            android:textSize="20sp"
+            android:text="@string/Number2" />
+
+        <Button
+            android:id="@+id/Number_3"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:backgroundTint="#F76902"
+            android:layout_marginStart="30dp"
+            android:textSize="20sp"
+            android:text="@string/Number3" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/NumRow2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_below="@id/NumRow1"
+        android:layout_marginTop="20dp">
+
+        <Button
+            android:id="@+id/Number_4"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:backgroundTint="#F76902"
+            android:textSize="20sp"
+            android:text="@string/Number4" />
+
+        <Button
+            android:id="@+id/Number_5"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:backgroundTint="#F76902"
+            android:layout_marginStart="30dp"
+            android:textSize="20sp"
+            android:text="@string/Number5" />
+
+        <Button
+            android:id="@+id/Number_6"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:backgroundTint="#F76902"
+            android:layout_marginStart="30dp"
+            android:textSize="20sp"
+            android:text="@string/Number6" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/NumRow3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_below="@id/NumRow2"
+        android:layout_marginTop="20dp">
+
+        <Button
+            android:id="@+id/Number_7"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:backgroundTint="#F76902"
+            android:textSize="20sp"
+            android:text="@string/Number7" />
+
+        <Button
+            android:id="@+id/Number_8"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:backgroundTint="#F76902"
+            android:layout_marginStart="30dp"
+            android:textSize="20sp"
+            android:text="@string/Number8" />
+
+        <Button
+            android:id="@+id/Number_9"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:backgroundTint="#F76902"
+            android:layout_marginStart="30dp"
+            android:textSize="20sp"
+            android:text="@string/Number9" />
+    </LinearLayout>
+
+    <ImageView
+        android:contentDescription="@string/PawImage"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/app_spirit_paw"/>
+
+</RelativeLayout>

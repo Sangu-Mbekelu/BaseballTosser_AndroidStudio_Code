@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app_background"
+    tools:context=".mode_select">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:gravity="center"
+        android:text="@string/SelectMode"
+        android:textColor="@color/white"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:typeface="sans"
+        android:id="@+id/title"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="170dp"
+        android:layout_marginLeft="2.5dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/Preset"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:backgroundTint="#F76902"
+            android:text="@string/PresetMode"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/List"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:layout_margin="5dp"
+            android:backgroundTint="#F76902"
+            android:text="@string/ListMode"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/Random"
+            android:layout_width="300dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="200dp"
+            android:backgroundTint="#F76902"
+            android:text="@string/RandomMode"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/OnDemand"
+            android:layout_width="300dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="30dp"
+            android:backgroundTint="#F76902"
+            android:text="@string/OnDemandMode"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <ImageView
+        android:contentDescription="@string/PawImage"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/app_spirit_paw"/>
+
+</RelativeLayout>
