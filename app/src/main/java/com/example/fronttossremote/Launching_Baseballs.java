@@ -17,10 +17,6 @@ public class Launching_Baseballs extends AppCompatActivity {
 
     public BluetoothSocket btSocket = FrontPage.btSocket;
 
-    public byte[] Baseball_Positions = selectgrid.Baseball_Positions;
-
-    int Number_of_Baseballs = NumberofBaseballs.getNumberofBaseballs();
-
     public int modeSelect = mode_select.modeSelect;
 
     public int[] BaseballsArray = ListPage.BaseballsArray;
@@ -60,17 +56,6 @@ public class Launching_Baseballs extends AppCompatActivity {
 
         @Override
         public void run() {
-
-            if(modeSelect == 1) {
-                for (int i = 0; i < Number_of_Baseballs; ++i) {
-                    try {
-                        OutputStream outputStream = btSocket.getOutputStream();
-                        outputStream.write(Baseball_Positions[i]);
-                    } catch (IOException e) {
-                        e.printStackTrace();
-                    }
-                }
-            }
 
             boolean Arduino_Response = false;
 
